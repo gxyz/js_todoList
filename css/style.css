@@ -1,0 +1,61 @@
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.nav-list {
+    padding-left: 0px;
+}
+
+.nav-list .nav-item {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.nav-list .nav-item a {
+    text-decoration: none;
+    margin: 10px;
+    box-shadow: 0 0 10px 1px #ddd;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.nav-list .nav-item a:hover,
+.nav-list .nav-item a:focus {
+    background-color: #0dd;
+    color: #fff;
+}
+
+.selected {
+    background-color: #0dd;
+    color: #fff;
+}
+
+#input-todo {
+    height: 50px;
+    width: 350px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    outline:none;
+    padding: 0 20px;
+    font-weight: bold;
+    box-shadow: 0 0 10px 2px #ddd;
+}
+
+#show-todo {
+    width: 500px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.todo-item {
+    font-size: 26px;
+}
+
+.finish {
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 26px;
+}
