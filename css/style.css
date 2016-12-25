@@ -1,3 +1,7 @@
+body {
+    font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+}
+
 .container {
     width: 500px;
     margin: 0 auto;

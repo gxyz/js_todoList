@@ -11,16 +11,24 @@ window.onload = function () {
     input_todo.addEventListener('keydown', function(event) {
         if (event.keyCode == 13 && event.target.value.length >= 3) {
             addLi(event.target, show_todo);
-
         }
     })
 
     show_todo.addEventListener('click', function(event) {
-        event.target.setAttribute("class", "finish");
-        removeEle(doingTodo, event.target);
-        finishTodo.push(event.target);
-        if (location.hash.slice(1) === '/doing') {
-            show_todo.removeChild(event.target);        
+        if (event.target.getAttribute("class") === "finish") {
+            event.target.setAttribute("class", "todo-item");
+            removeEle(finishTodo, event.target);
+            doingTodo.push(event.target);
+            if (location.hash.slice(1) === '/finish') {
+                show_todo.removeChild(event.target);        
+            }
+        } else {
+            event.target.setAttribute("class", "finish");
+            removeEle(doingTodo, event.target);
+            finishTodo.push(event.target);
+            if (location.hash.slice(1) === '/doing') {
+                show_todo.removeChild(event.target);        
+            }
         }
     }, false)
     
